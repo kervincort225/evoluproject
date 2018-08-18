@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--IMPORTANDO CSS3-ANIMATE-->
+	<link rel="stylesheet" type="text/css" href="css/css3Animate/animations.css">
+	<!--IMPORTAR EL FUENTE DE LOS ICONOS DE GOOGLE-->
+	<!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<!--IMPORTADO MATERIALIZE CSS-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection">
+    <!--NUESTROS PROPIOS ESTILOS-->
+    <link rel="stylesheet" type="text/css" href="css/principal.css">
+	<!--PERMITIR QUE EL SITIO WEB ESTE OPTOMIZADO PARA MOVILES-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Presupuesto</title>
+</head>
+<body id="paginaPresupuesto">
+	<header id="header">
+		<!--++++++++++++++++++++ BARRA DE NAVEGACION ++++++++++++++++++++-->
+		<article class="navbar-fixed">
+			<nav class="white" role="navigation">
+				<section class="nav-wrapper container">
+					<section>
+						<a id="logo-container" href="#" class="brand-logo"><img src="img/logoEvoluproject01.png" width="62px" class="responsive-img"></a>
+					</section>
+					<ul class="right hide-on-med-and-down">
+					    <li><a class="blue-grey-text text-darken-3" href="index.html#inicio">Inicio</a></li>
+					    <li><a class="blue-grey-text text-darken-3" href="index.html#nosotros">Sobre nosotros</a></li>
+					    <li><a class="blue-grey-text text-darken-3" href="index.html#servicios">Servicios</a></li>
+					    <li><a class="blue-grey-text text-darken-3" href="index.html#portafolio">Portafolio</a></li>
+					    <li><a class="blue-grey-text text-darken-3" href="index.html#contacto">Contacto</a></li>
+					</ul>
+					<!--Menu para moviles-->
+					<ul class="side-nav" id="nav-mobile">
+						<li><a class="blue-grey-text text-darken-3" href="index.html#inicio">Inicio</a></li>
+					    <li><a class="blue-grey-text text-darken-3" href="index.html#nosotros">Sobre nosotros</a></li>
+					    <li><a class="blue-grey-text text-darken-3" href="index.html#servicios">Servicios</a></li>
+					    <li><a class="blue-grey-text text-darken-3" href="index.html#portafolio">Portafolio</a></li>
+					    <li><a class="blue-grey-text text-darken-3" href="index.html#contacto">Contacto</a></li>
+					</ul>
+					<a href="#" data-activates="nav-mobile" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only cyan"><i class="mdi-navigation-menu"></i></a>
+				</section>
+			</nav>
+		</article><!--cierre article del menu-->
+	</header>
+    <article>
+		<section class="container">
+				<div class="row">
+					<div class="col s12">
+						<form class="col s12" action="#" method="post">
+							<!--++++++++ Informacion de contacto ++++++++-->
+						    <section class="card-panel">
+							    <h4 class="header2">Informacion de Contacto</h4>
+								<section class="row">
+									<section class="input-field col s12">
+										<i class="mdi-action-account-circle prefix"></i>
+										<input id="nombreEmpresa" placeholder="mi negocio C.A" name="nombreEmpresa" type="text" class="validate">
+										<label for="nombreEmpresa">Nombre de la empresa o marca</label>
+									</section>	
+								</section>
+								<section class="row">
+									<section class="input-field col s12">
+										<i class="mdi-communication-email prefix"></i>
+										<input id="email" placeholder="micorreo@gmail.com" name="email" type="email" class="validate">
+										<label for="email">Correo/Email</label>
+									</section>
+							    </section>
+							    <section class="row">
+							    	<section class="input-field col s6">
+										<i class="mdi-action-perm-phone-msg prefix"></i>
+										<input id="telefono" placeholder="0414567890" name="telefono" type="text" class="validate">
+										<label for="telefono">Telefono</label>
+									</section>
+							    </section>
+							    <section class="row">
+							    	<section class="input-field col s12">
+										<i class="mdi-action-description prefix"></i>
+										<textarea id="descripcionServicios" placeholder="Indique su respuesta" name="descripcionServicios" class="materialize-textarea"></textarea>
+										<label for="descripcionServicios">A que se dedican o que ofrece su negocio?</label>
+									</section>
+							    </section>
+						    </section>
+						    <!--++++++++ Proyecto requerido ++++++++-->
+						    <section class="card-panel">
+						    	<h4 class="header2">Proyecto requerido</h4>
+						    	<div class="row">
+						    		<!--tipo de proyecto-->
+									<div class="col s12">
+										<label>Tipo de proyecto</label>
+										<select class="browser-default">
+											<option value="" disabled selected>Seleccione</option>
+											<option value="1">Diseño y desarrollo web</option>
+											<option value="2">Desarrollo de Tiendas Online e-commerce</option>
+											<option value="3">Desarrollo de aplicaciones a medida</option>
+											<option value="4">Rediseño web actual</option>
+										</select>
+									</div>
+							    </div><br>
+							    <!--Servidor web?-->
+							    <div class="row">
+									<div class="input-field col s12">
+										<i class="mdi-action-dns prefix"></i>
+										<input id="hostingContratado" placeholder="Indique su respuesta" name="hostingContratado" type="text" class="validate">
+										<label for="hostingContratado">Tienen un servidor y un dominio para su web contratado o necesita asesoría con ello?</label>
+									</div>
+								</div>
+								<!--Paginas de referencia-->
+								<div class="row">
+									<div class="input-field col s12">
+										<i class="mdi-action-find-in-page prefix"></i>
+										<textarea id="paginaReferencia" placeholder="http//..." name="paginaReferencia" class="materialize-textarea"></textarea>
+										<label for="paginaReferencia">Indica algunas páginas de referencia que te gustan y porque</label>
+									</div>
+								</div>
+								<!--Contenido de la web a publicar-->
+								<div class="row">
+									<div class="input-field col s12">
+										<i class="mdi-image-add-to-photos prefix"></i>
+										<input id="contenidoPublicar" placeholder="Si, tengo imagenes..." name="contenidoPublicar" type="text" class="validate">
+										<label for="contenidoPublicar">Tienes ya el contenido para publicarlo en su sitio (imágenes, texto) o necesitas asesoría para su desarrollo?</label>
+									</div>
+								</div>
+								<!--Requerimientos del proyecto-->
+								<div class="row">
+									<div class="input-field col s12">
+										<i class="mdi-action-speaker-notes prefix"></i>
+										<textarea id="requerimientos" placeholder="Requerimientos..." name="requerimientos" class="materialize-textarea"></textarea>
+										<label for="requerimientos">Indique los requerimientos que necesita para el desarrollo de su sitio o aplicación web</label>
+									</div>
+								</div>
+						    </section>
+						    <!--++++++++ Presupuesto ++++++++-->
+						    <section class="card-panel">
+						    	<h4 class="header2">Presupuesto</h4>
+						    	<!--Tiempo del proyecto-->
+						    	<div class="row">
+									<div class="input-field col s12">
+										<i class="mdi-image-timelapse prefix"></i>
+										<input id="tiempoProyecto" placeholder="En 3 meses..." name="tiempoProyecto" type="text" class="validate">
+										<label for="tiempoProyecto">En cuanto tiempo necesitas que esté listo el proyecto?</label>
+									</div>
+								</div>
+						    </section>
+						    <!--Boton-->
+						    <div class="center-align row">
+								<section class="input-field col s12">
+									<button class="btn waves-effect waves-light cyan darken-2" type="submit" name="enviar">Enviar
+										<i class="mdi-content-send right white-text"></i>
+									</button>
+								</section>
+							</div>
+						</form>
+					</div>
+				</div>
+		</section>
+	</article>
+	<footer class="animatedParent animateOnce page-footer blue-grey lighten-3">
+				<!--++++++++++++++++++++ DATOS DE LA EPRESA PARA CONTACTO ++++++++++++++++++++-->
+				<address class="container row">
+					<section class="animated bounceInRight col s12">
+							<section class="row">
+								<section class="col s6">
+									<h5 class="white-text">Venezuela:</h5>
+									<p class="white-text"><i class="mdi-communication-business "></i> <strong>Movil:</strong> 04122192736</p>
+									<p class="white-text"><i class="mdi-action-perm-phone-msg"></i>  <strong>Direccion:</strong> Urb. Jardines de Santa Rosa, Cúa, Miranda, Venezuela.</p>
+								</section>
+								<section class="col s6">
+									<h5 class="white-text">Colombia:</h5>
+									<p class="white-text"><i class="mdi-communication-business "></i> <strong>Movil:</strong> 3136548652</p>
+									<p class="white-text"><i class="mdi-action-perm-phone-msg"></i> <strong>Direccion:</strong> CARRERA 36 NO. 10-125, Cali, Colombia.</p>
+								</section>
+							</section>
+					</section>
+				</address>
+	        </article>
+			<article class="blue-grey darken-4 footer-copyright">
+			    <section class="row">
+			    	<section class="col s8 m8 l8">
+				       <strong><p class="center-align">@ 2017 Copyright evoluproject services, Todos los derechos reservados<p></strong>
+				    </section>
+				    <section class="col s8 m8 l4">
+				        <section class="center-align">
+				            <i class="small fa fa-linkedin-square white-text"></i>
+				            <i class="small fa fa-facebook-square white-text"></i>
+				        </section>
+				    </section>
+			    </section>
+	        </article>
+		</footer>
+<!--IMPORTAR JSs JQUERY Y MATERIALIZE-->
+	<script src="js/jquery/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/materialize/materialize.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src='js/css3Animate/css3-animate-it.js' type="text/javascript" charset="utf-8"></script>
+	<script src="js/iniciarComponentes.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
